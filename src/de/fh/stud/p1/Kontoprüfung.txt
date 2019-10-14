@@ -1,0 +1,58 @@
+Gesamtleistung
+    Bewertungsschema (Kann im nachhinein geändert werden)
+    Standardfall 4 Teilleistungen
+    Gesamtleistung muss nicht in einem Semester komplett bestanden werden (einzelne Teilleistungen können zu unterschiedlichen Zeitpunkten gemacht und bestanden werden)
+
+Teilleistungen
+    Pro Prüfung kann die selbe Teilleistung nur einem Block zugeordnet werden (aber in mehreren Prüfungen)
+
+Prüfungsblöcke
+    Neues Dropdown beim editieren von Blöcken "Leistung" (Teilleistungen können hier ausgewählt werden)
+    Neue Spalte im Grid für Blöcke "Leistung"
+    
+Prüfung
+    Neue Option im DropDown Prüfungsergebnisse "Leistungen"
+        Generiert eine Excel-Datei (Zeigt den Fortschritt der Studenten für die einzelnen Teilleistungen an - inkl. Namen der Prüfungen)
+            Kann auch über das Grid für Gesamtleistung generiert werden
+    Neuer Prüfungstyp "Kontoprüfung"
+        
+Kontoprüfung
+    Neue Option Leistungen (Gesamtleistungen müssen hier ausgewählt werden)
+        Schränkt die Auswahl der Teilleistungen in den Blöcken ein (gemäß der ausgewählten Gesamtleistung)
+        Neuer Abschnitt Kontenprüfung
+            Hier werden Kombinationen erstellt werden, die aus den Prüfungsblöcken Unterprüfungen erstellen (Namen der Kombinationen)
+            Fehlende Leistungen der Kandidaten werden hier angezeigt (Kandidaten werden nur gezählt, wenn sie sich mal bei der Prüfung angemeldet hatten)
+            Es kann mehrere Unterprüfungen mit den selben Blöcken geben (Studenten können sich dann aussuchen über welchen Weg sie die die einzelnen Blöcke bzw. Teilleistungen bestehen wollen)
+        Kann nicht kopiert werden
+    Vor dem Export müssen zunächst alle Unterprüfungen aus den Kombinationen generiert werden
+    Vor dem Export müssen zunächst Kandidaten hinzugefügt werden (und zwar den Unterprüfungen - Kandidaten in der Kontoprüfungen haben keinen Effekt)
+    Status ist abhängig von dem Status aller Teilprüfungen
+    Zurücksetzen des Status wirkt sich auf den Status aller Unterprüfungen aus
+    Export führt zu dem Export aller Unterprüfungen (für außenstehende nicht feststellbar, dass diese zu einer Kontoprüfung gehören)
+
+Kontoteilprüfung (=Unterprüfung)
+    Werden aus den Kombinationen in den Kontoprüfungen generiert
+    Blöcke werden gemäß der Kombination der Kontoprüfung entnommen (kopiert)
+    Werden im Grid für Prüfungen unter den Kontoprüfungen angzeigt
+    Status kann nicht zurückgesetzt werden
+    Kann nicht direkt (nur über Kontoprüfung) exportiert werden
+    Kann in keiner Weise verändert werden (Nur Allgemeine Informationen - außer Anzahl der Fragen, Bewertungsschema und Blueprint nach Punkten)
+    Kandidaten müssen den Teilprüfungen zugeordnet werden
+
+
+Offene Fragen
+    Wann werden Teilleistungen angerechnet, wann werden sie zurückgesetzt (im Falle einer nicht bestandenen Prüfungen)
+    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TC
+    Ändern von Prüfungen nach dem Export inkl. erneutem Export
+    Martrikelnr. ersetzen in Unterprüfungen (Beachte vor/nach der Freitextkorretur) -> Ersetze Martrikelnr wird mit an die Kontoprüfung übertragen (wegen Ergebnisse)
+    Kontenprüfung: Postreview (Manfred zuweisen - kommt in TS für Postreview) - Ansonsten außen vor lassen 
+    Status vergleichen (Grid und Prüfungsverlauf in der Prüfung)
+    Status der Kontenprüfung vergl. mit Teilprüfungen
+
+Für TCs
+    ZIPs lokal speichern die zum Testen dienen
+
+Andere TCs
+    Termin bestätigen und ändern (danch wieder bestätigen)
